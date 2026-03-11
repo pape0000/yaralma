@@ -41,7 +41,7 @@ YARALMA is built to close that gap.
 ### In scope (V1)
 
 - **Android Accessibility Overlay** — Real-time visual blurring and audio muting on top of YouTube and Netflix.
-- **Account linking** — OAuth for YouTube and Google Family Link.
+- **Account linking** — OAuth for YouTube and Google (parent-linked account; Family Link–style experience via overlay; no public Family Link API).
 - **Spiritual sync** — Location-based locks for Islamic prayer times and Sunday Mass.
 - **WhatsApp dashboard** — Weekly reports (“Jom Report”) and remote commands (e.g. LOCK, +30 min).
 - **Multi-language UI** — Setup and alerts in **French**, **Wolof**, and **Diola**.
@@ -73,7 +73,7 @@ YARALMA is built to close that gap.
 |-------|--------|
 | **Parent app** | Flutter |
 | **Overlay / background** | Android Accessibility Service (Kotlin/Java) |
-| **Backend** | Firebase (config sync, user profiles) |
+| **Backend** | Supabase (config sync, user profiles) |
 | **Messaging** | Twilio WhatsApp Business API |
 | **ASR** | Specialized Wolof acoustic model for real-time keyword detection |
 

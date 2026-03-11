@@ -36,6 +36,7 @@ dependencies:
   http: ^1.1.0
   provider: ^6.1.1
   go_router: ^14.0.0
+  flutter_dotenv: ^5.2.0
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +54,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/config.env
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

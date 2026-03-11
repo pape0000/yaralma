@@ -9,7 +9,7 @@ Flutter parent app (Android + iOS) plus Android accessibility overlay skeleton, 
   - **Home:** Placeholder for accessibility setup (Android), YouTube/Netflix link, Holy Lock. On iOS, home explains that the overlay runs on Android and this app is for settings/reports.
   - **Theme:** Teranga-style (warm, premium)
   - **Routing:** `go_router` (value-agreement → faith-shield → home)
-- **Supabase:** Init in `main.dart`; set `_supabaseUrl` and `_supabaseAnonKey` (from [Supabase Dashboard](https://supabase.com/dashboard)).
+- **Supabase (Phase 2):** Init in `main.dart` from `assets/config.env`. Set `SUPABASE_URL` and `SUPABASE_ANON_KEY` in that file (from [Supabase Dashboard](https://supabase.com/dashboard)). See [../docs/SUPABASE_SETUP.md](../docs/SUPABASE_SETUP.md) to create the project, run the migration, and enable Realtime + Auth.
 - **Android:** `YaralmaAccessibilityService` — overlay on YouTube/Netflix when `is_locked` is true (read from SharedPreferences; Flutter will write this when Supabase realtime updates). App label: **YARALMA**. minSdk 26.
 - **iOS:** App display name **YARALMA**; same onboarding and home (overlay card shows an informational message that the shield runs on Android).
 

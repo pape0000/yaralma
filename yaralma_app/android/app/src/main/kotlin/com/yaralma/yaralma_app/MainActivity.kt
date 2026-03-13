@@ -55,6 +55,16 @@ class MainActivity : FlutterActivity() {
                     prefs.edit().putInt("searches_blocked_today", 0).apply()
                     result.success(true)
                 }
+                "setHiddenTitles" -> {
+                    val titles = call.argument<String>("titles") ?: ""
+                    prefs.edit().putString("hidden_titles", titles).apply()
+                    result.success(true)
+                }
+                "setBlurScenes" -> {
+                    val scenes = call.argument<String>("scenes") ?: ""
+                    prefs.edit().putString("blur_scenes", scenes).apply()
+                    result.success(true)
+                }
                 else -> result.notImplemented()
             }
         }

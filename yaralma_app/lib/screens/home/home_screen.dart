@@ -97,8 +97,8 @@ class HomeScreen extends StatelessWidget {
               child: ListTile(
                 leading: const Icon(Icons.movie_outlined),
                 title: const Text('Netflix Guardian'),
-                subtitle: const Text('Coming in Phase 10'),
-                enabled: false,
+                subtitle: const Text('Scene blur & catalog filter'),
+                onTap: () => context.push(AppRoutes.pathNetflixGuardian),
               ),
             ),
           ],

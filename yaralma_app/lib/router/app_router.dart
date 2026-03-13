@@ -6,6 +6,7 @@ import '../screens/onboarding/value_agreement_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/holy_lock/holy_lock_screen.dart';
 import '../screens/youtube_guardian/youtube_guardian_screen.dart';
+import '../screens/netflix_guardian/netflix_guardian_screen.dart';
 
 /// Route names and paths.
 class AppRoutes {
@@ -14,12 +15,14 @@ class AppRoutes {
   static const String home = 'home';
   static const String holyLock = 'holy-lock';
   static const String youtubeGuardian = 'youtube-guardian';
+  static const String netflixGuardian = 'netflix-guardian';
 
   static const String pathValueAgreement = '/onboarding/value-agreement';
   static const String pathFaithShield = '/onboarding/faith-shield';
   static const String pathHome = '/home';
   static const String pathHolyLock = '/holy-lock';
   static const String pathYouTubeGuardian = '/youtube-guardian';
+  static const String pathNetflixGuardian = '/netflix-guardian';
 }
 
 GoRouter createAppRouter() {
@@ -47,6 +50,10 @@ GoRouter createAppRouter() {
       GoRoute(
         path: AppRoutes.pathYouTubeGuardian,
         builder: (context, state) => const YouTubeGuardianScreen(),
+      ),
+      GoRoute(
+        path: AppRoutes.pathNetflixGuardian,
+        builder: (context, state) => const NetflixGuardianScreen(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

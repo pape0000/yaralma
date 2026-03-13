@@ -101,6 +101,14 @@ class HomeScreen extends StatelessWidget {
                 onTap: () => context.push(AppRoutes.pathNetflixGuardian),
               ),
             ),
+            Card(
+              child: ListTile(
+                leading: const Icon(Icons.hearing),
+                title: const Text('Wolof Guardian'),
+                subtitle: const Text('Audio monitoring (coming soon)'),
+                onTap: () => context.push(AppRoutes.pathWolofGuardian),
+              ),
+            ),
           ],
         ),
       ),

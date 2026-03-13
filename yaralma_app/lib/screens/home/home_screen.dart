@@ -79,10 +79,10 @@ class HomeScreen extends StatelessWidget {
               ),
             Card(
               child: ListTile(
-                leading: const Icon(Icons.link),
-                title: const Text('Link YouTube / Google'),
-                subtitle: const Text('OAuth — coming in Phase 9'),
-                onTap: () {},
+                leading: const Icon(Icons.play_circle_outline),
+                title: const Text('YouTube Guardian'),
+                subtitle: const Text('Search filter & content protection'),
+                onTap: () => context.push(AppRoutes.pathYouTubeGuardian),
               ),
             ),
             Card(
@@ -91,6 +91,14 @@ class HomeScreen extends StatelessWidget {
                 title: const Text('Holy Lock schedule'),
                 subtitle: const Text('Prayer times & Mass'),
                 onTap: () => context.push(AppRoutes.pathHolyLock),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: const Icon(Icons.movie_outlined),
+                title: const Text('Netflix Guardian'),
+                subtitle: const Text('Coming in Phase 10'),
+                enabled: false,
               ),
             ),
           ],

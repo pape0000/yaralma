@@ -22,13 +22,13 @@ void main() {
       expect(find.text('Your shield is ready.'), findsOneWidget);
     });
 
-    testWidgets('shows Link YouTube / Google card', (tester) async {
+    testWidgets('shows YouTube Guardian card', (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: const HomeScreen(),
         ),
       );
-      expect(find.text('Link YouTube / Google'), findsOneWidget);
+      expect(find.text('YouTube Guardian'), findsOneWidget);
     });
 
     testWidgets('shows Holy Lock schedule card', (tester) async {
